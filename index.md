@@ -1,13 +1,17 @@
 ---
-title: Hipster ipsum.
+title: muncus.github.io
 layout: stock
 ---
-Fixie kogi authentic Kickstarter seitan raw denim, 3 wolf moon you probably haven't heard of them put a bird on it chia. Meh plaid taxidermy skateboard street art, pop-up retro Schlitz you probably haven't heard of them flannel banjo. Ugh photo booth single-origin coffee, Carles sustainable bitters direct trade fap literally semiotics freegan try-hard plaid viral bespoke. Salvia American Apparel brunch fanny pack plaid cliche. Hashtag pork belly keytar quinoa. Try-hard kitsch raw denim, locavore pug taxidermy church-key artisan mixtape lomo mustache. Cornhole paleo trust fund Godard viral asymmetrical.
 
-Selfies blog bicycle rights selvage, before they sold out wolf slow-carb pour-over mixtape Echo Park flannel. Meditation Echo Park actually, McSweeney's keytar High Life dreamcatcher. Chillwave next level bitters XOXO semiotics. Organic keffiyeh pickled, jean shorts readymade blog craft beer cliche try-hard freegan. Cold-pressed bitters mustache aesthetic raw denim Thundercats cred viral, Godard authentic Echo Park flexitarian. Freegan fingerstache cred Truffaut, quinoa Brooklyn cornhole. Hashtag drinking vinegar dreamcatcher VHS asymmetrical fixie occupy wolf.
+I'm Marc. I build things. Usually software, sometimes hardware, and sometimes furniture.
 
-Butcher bicycle rights freegan, migas Intelligentsia food truck stumptown sustainable hashtag kogi forage Portland kale chips. IPhone retro trust fund DIY. Kickstarter Portland bitters literally narwhal. Scenester hashtag banh mi, Brooklyn pug shabby chic meggings distillery wolf occupy vinyl. Direct trade Kickstarter small batch, cray Vice gluten-free Etsy lo-fi butcher. Marfa forage single-origin coffee, four dollar toast +1 put a bird on it selfies synth. Bushwick pickled organic, ennui Austin lo-fi flexitarian chia Intelligentsia fashion axe pork belly.
 
-Irony put a bird on it next level, McSweeney's cold-pressed ugh Pinterest heirloom banjo squid pickled artisan. Crucifix locavore 90's bespoke roof party Williamsburg, actually vegan asymmetrical. Pop-up food truck lo-fi roof party post-ironic heirloom. Chambray typewriter disrupt fashion axe, mustache ethical DIY tote bag vegan McSweeney's four dollar toast keffiyeh lomo. Quinoa paleo meggings Pitchfork drinking vinegar you probably haven't heard of them. Banjo fanny pack migas, Pinterest +1 brunch cardigan Carles kale chips leggings typewriter mumblecore letterpress farm-to-table. Butcher pickled crucifix, Odd Future mlkshk blog chambray trust fund messenger bag food truck banjo normcore flexitarian selfies.
+### Blog Posts
 
-Artisan vegan typewriter food truck, Etsy narwhal tofu. Austin tattooed cronut selfies. Before they sold out Kickstarter Odd Future fanny pack. Distillery flannel bespoke asymmetrical, migas freegan Intelligentsia sriracha. High Life umami kitsch Kickstarter, fixie narwhal hella vinyl. Keffiyeh Brooklyn gastropub bitters, VHS Pinterest Bushwick four dollar toast trust fund messenger bag. Selfies street art umami fanny pack pork belly.
+{% for post in site.posts %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
+
+I can be found on [github](http://github.com/muncus), [twitter](http://twitter.com/muncus),
+and elsewhere.
+
