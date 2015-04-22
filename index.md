@@ -1,5 +1,5 @@
 ---
-title: muncus.github.io
+title: Home
 layout: stock
 ---
 
