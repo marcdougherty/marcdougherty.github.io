@@ -1,6 +1,6 @@
 ---
 layout: stock
-title:  "Welcome to Jekyll!"
+title:  "Sample post"
 date:   2014-01-27 13:57:31
 ---
 
