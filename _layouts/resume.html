@@ -1,0 +1,32 @@
+---
+layout: stock
+---
+    <link rel="stylesheet" href="/css/resume.css" />
+    <div class="resume-download no-print">
+      <!-- FIXME: <a href="/assets/resume-kevin-reedy.pdf">Download PDF</a> -->
+    </div>
+    <br />
+    <div class="resume-contact">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">linkedin.com/in/{{ site.linkedin_username }}</a><br />
+        <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a><br />
+        <a href="https://twitter.com/{{ site.twitter_username }}">twitter.com/{{ site.twitter_username }}</a>
+    </div>
+    <div class="resume-name">
+        <h1>{{ site.resume_name }}</h1>
+    </div>
+{% for section in site.data.resume.sections %}
+    <div class="section">
+        <h2 id="{{ section.id }}">
+            {{ section.name }}
+        </h2>
+        <hr />
+        {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
+        {% for hash in site.data.resume %}
+          {% if hash[0] == section.id %}
+            {% assign blurb = hash[1] %}
+            {% include {{section_layout}} %}
+          {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}

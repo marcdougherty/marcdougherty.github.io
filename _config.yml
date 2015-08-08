@@ -4,6 +4,13 @@ analytics_tag: "UA-12978603-2"
 markdown: redcarpet
 permalink: none
 
+# resume things.
+resume_name: 'Marc Dougherty'
+email: 'marc@marcdougherty.com'
+github_username: 'muncus'
+twitter_username: 'muncus'
+linkedin_username: 'doughertymarc'
+
 defaults:
   -
     scope:
