@@ -1,0 +1,16 @@
+- Languages:
+    primary:
+      - Python
+      - Ruby
+    secondary:
+      - Java
+      - C/C++
+- Tools:
+    primary:
+      - Git
+      - Docker
+- Cloud Services:
+    primary:
+      - App Engine
+    secondary:
+      - Google Cloud Platform (Compute Engine, Cloud Storage)
