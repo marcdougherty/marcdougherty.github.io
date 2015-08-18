@@ -1,6 +1,15 @@
-- org:  Google, Inc.
+- org: Google, Inc.
   role: Site Reliability Engineer
   location: San Francisco, CA
-  when: July 2006 - Present
+  when: 2006 - Present
   bullets:
-    - 'TODO'
+    - 'Ensured the uptime, reliability and scalability of App Engine.'
+    - 'Wrote policy and automation for App Engine pushes, enabling 5x increase in velocity.'
+
+- org: Turbine, Inc.
+  role: Systems Administrator
+  location: Norwood, MA
+  when: 2004 - 2006
+  bullets:
+    - 'Developed automation and tools for use in game development'
+    - 'Maintained various internal corporate systems'

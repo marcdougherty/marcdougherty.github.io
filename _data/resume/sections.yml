@@ -12,10 +12,11 @@
   id: education
   layout: block
 
+- name: Skills
+  id: skills
+  layout: cloud
+#
 #- name: Projects
 #  id: projects
 #  layout: block
 #
-#- name: Skills
-#  id: skills
-#  layout: cloud
