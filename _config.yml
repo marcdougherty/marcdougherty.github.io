@@ -1,8 +1,12 @@
 name: Marc Dougherty
-tagline: "⚒ ⚙ ⛵  - Builder of things, Sailor of boats."
+tagline: "⚒ ⚙ ⛵ "
 analytics_tag: "UA-12978603-2"
-markdown: redcarpet
 permalink: none
+#GFM respects newlines, which are present in blog posts already.
+# remove them, and then switch to GFM.
+#markdown: kramdown
+#kramdown:
+#  input: GFM
 
 # resume things.
 resume_name: 'Marc Dougherty'
