@@ -1,8 +1,7 @@
 ---
 title:  "Big Red Button"
+layout: post
 ---
-
-## {{ page.title }}
 
 I was working on a particularly challenging service turndown, which
 involved handholding some user migrations. During the waiting periods, it
