@@ -27,3 +27,11 @@ defaults:
       path: "" #Empty scope applies to all.
     values: 
       layout: "stock"
+
+exclude: [
+  '_config.yml'
+  'CNAME',
+  '.git'
+  '.gitignore',
+  'TODO',
+]
