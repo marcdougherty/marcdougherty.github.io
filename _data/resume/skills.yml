@@ -1,6 +1,7 @@
 - Languages:
     primary:
       - Python
+      - Bash
       - Ruby
     secondary:
       - Java

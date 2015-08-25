@@ -15,8 +15,8 @@
 - name: Skills
   id: skills
   layout: cloud
-#
-#- name: Projects
-#  id: projects
-#  layout: block
-#
+
+- name: Other
+  id: other
+  layout: block
+
