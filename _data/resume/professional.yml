@@ -4,7 +4,10 @@
   when: 2006 - Present
   bullets:
     - 'Ensured the uptime, reliability and scalability of App Engine.'
-    - 'Wrote policy and automation for App Engine pushes, enabling 5x increase in velocity.'
+    - 'Wrote policy and automation for App Engine pushes, enabling 5x increase in push velocity.'
+    - 'Trained new London-based team to support services used by all Android devices.'
+    - "Built monitoring and launch dashboards for Android's initial launch (2008)."
+    - 'Participate in on-call rotations, incident response, and contributed to numerous postmortems.'
 
 - org: Turbine, Inc.
   role: Systems Administrator
