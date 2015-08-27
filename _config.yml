@@ -29,9 +29,9 @@ defaults:
       layout: "stock"
 
 exclude: [
-  '_config.yml'
+  '_config.yml',
   'CNAME',
-  '.git'
+  '.git',
   '.gitignore',
   'TODO',
 ]
