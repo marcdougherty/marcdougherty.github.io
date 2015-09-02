@@ -1,5 +1,6 @@
 ---
 title:  "Muni Displays"
+layout: stock
 published: false
 ---
 
