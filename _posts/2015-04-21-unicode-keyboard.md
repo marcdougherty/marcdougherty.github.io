@@ -1,9 +1,6 @@
 ---
-layout: stock
 title:  "Unicode (emoji) keyboard"
 ---
-
-## {{ page.title }}
 
 Emoji keyboards on mobile devices have been in widespread use for a while, but
 I sometimes find myself using a computer, and have a hard time remembering the

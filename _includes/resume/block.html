@@ -1,0 +1,33 @@
+{% for section in blurb %}
+    <div class="block">
+        {% if section.org or section.when %}
+        <div class="main-row">
+            <div class="org">
+                <h3>{{ section.org }}</h3>
+            </div>
+            <div class="when">
+                <h3>{{ section.when }}</h3>
+            </div>
+        </div>
+        {% endif %}
+        {% if section.role or section.location %}
+        <div class="sub-row">
+            <div class="role">
+                <h4>{{ section.role }}</h4>
+            </div>
+            <div class="location">
+                <h4>{{ section.location }}</h4>
+            </div>
+        </div>
+        {% endif %}
+        {% if section.bullets %}
+        <ul>
+            {% for bullet in section.bullets %}
+            <li>{{ bullet | markdownify }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <br/>
+        {% endif %}
+    </div>
+{% endfor %}
