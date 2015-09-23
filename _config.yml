@@ -35,3 +35,6 @@ exclude: [
   '.gitignore',
   'TODO',
 ]
+
+gems:
+  - jekyll-feed
