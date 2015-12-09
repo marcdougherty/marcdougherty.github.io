@@ -24,6 +24,10 @@ Instead of a stoplight, I found a small servo, and got the Photon using it very 
 
 To that end, I put together a web server with some configuration that maps the Particle device name (which the device can fetch from the Particle cloud api) to a set of nextbus query parameters. The device requests `/times/scrapple_ferret` (for instance), and the server returns the number of minutes until the next estimated arrival at the stop at which `scrapple_ferret` is configured.
 
-Remaining work includes painting a finished enclosure, and hanging it on the wall!
+The servo, however, makes a slight noise when it moves, and I found that having it run all night was not ideal. I added a button to activate the device for ~30m, and a pair of LED headlights that turn on when the device activates, and gradually dim as the device turns off.
+
+All that remained was to paint up a display face, vaguely resembling the from of an SF Muni train, and hang it on the wall!
+
+![final enclosure](images/muni2-final.jpg "Finished enclosure, on wall")
 
 The code for this project is available from [github.com/muncus/muni-display](https://github.com/muncus/muni-display).
