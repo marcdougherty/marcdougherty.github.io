@@ -65,19 +65,29 @@
     }
 
     ul {
-        padding-top: 10px;
         clear: both;
+        line-height: 1.25;
         li {
-            margin-bottom: -15px;
+          p {
+            display: inline;
+            font-size: small;
+            margin: 0;
+            padding: 0;
+          }
         }
     }
 }
 
 // Hide Elements on Print
+// dont color links in print.
 @media print {
-    .no-print, .no-print * {
-        display: none !important;
-    }
+  .no-print, .no-print * {
+      display: none !important;
+  }
+  a {
+      color: $text-color;
+      text-decoration: none;
+  }
 
 }
 
