@@ -24,7 +24,7 @@ perspective, but the [IFTTT](http://ifttt.com) event should fire as soon as it
 gets connected to the wifi network. Minor code changes were needed to make that
 happen, and then assert the pin connected to the powerswitch's p-fet gate (to
 power off the device). All code is available on
-[github/muncus/jamomatic](http://github.com/muncus/jamomatic).
+[github/muncus/jambutton](http://github.com/muncus/jambutton).
 
 After configuring a couple of IFTTT recipes, a press of the button results in
 ~20 seconds of powered-on time for the device, and a
