@@ -79,15 +79,18 @@
 }
 
 // Hide Elements on Print
-// dont color links in print.
 @media print {
   .no-print, .no-print * {
       display: none !important;
   }
+}
+
+// dont color links in print.
+@media print {
   a {
       color: $text-color;
       text-decoration: none;
   }
-
 }
+
 
