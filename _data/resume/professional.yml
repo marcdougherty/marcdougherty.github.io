@@ -1,13 +1,40 @@
 - org: Google, Inc.
-  role: Site Reliability Engineer
+  role: Site Reliability Engineer - App Engine
   location: San Francisco, CA
-  when: 2006 - Present
+  when: 2012 - Present
   bullets:
-    - 'Ensured the uptime, reliability and scalability of App Engine.'
-    - 'Wrote policy and automation for App Engine pushes, enabling 5x increase in push velocity.'
-    - 'Trained new London-based team to support services used by all Android devices.'
-    - "Built monitoring and launch dashboards for Android's initial launch (2008)."
-    - 'Participate in on-call rotations, incident response, and contributed to numerous postmortems.'
+    - Ensured the uptime, reliability and scalability of App Engine.
+    - Facilitated the explosive growth of large App Engine customers by making
+      changes to the request routing path.
+    - Wrote policy and automation for App Engine pushes, enabling 5x increase
+      in push velocity.
+    - Automated sharded backups of all App Engine customer data.
+    - Participate in on-call rotations, incident response, and contributed to
+      numerous postmortems.
+
+- org: Google, Inc.
+  role: Site Reliability Engineer - Mobile/Android
+  location: San Francisco, CA
+  when: 2009 - 2012
+  bullets:
+    - Responsible for backends of a wide variety of mobile-centric services,
+      including Google Maps, and services core to the operation of all Android
+      devices.
+    - Trained new London-based team to support services used by all Android devices.
+    - Designed and built unified monitoring framework to simplify configuration and dashboarding.
+    - Expanded the exising rollout automation to support a wider set of services.
+    - Onboarded several new services, converting them to use existing Best Practices with minimal disruption.
+
+- org: Google, Inc.
+  role: Corp Reliability Engineer
+  location: San Francisco, CA
+  when: 2006 - 2009
+  bullets:
+    - Responsible for several internal-only services used by the sales and
+      customer support organizations.
+    - Led team of 4 engineers in the onboarding of CRM software.
+    - Established monitoring and service management best practices.
+    - Built monitoring and launch dashboards for Android's initial public launch (2008).
 
 - org: Turbine, Inc.
   role: Systems Administrator
