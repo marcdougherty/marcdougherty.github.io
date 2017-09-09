@@ -238,3 +238,17 @@ Full-Width Styles
   list-style-type: none;
 }
 
+@media only screen and (max-width: 800px) {
+  .nav {
+    text-align: left;
+    width: 100%;
+    float: none;
+    ul {
+      display: block;
+    }
+
+    li {
+      display: block;
+    }
+  }
+}
