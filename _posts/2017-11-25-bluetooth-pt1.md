@@ -38,7 +38,7 @@ which is produced by Nordic Semiconductor, a major manufacturer of bluetooth
 chips. It has a variety of modes, and companion apps that i found indispensible
 for debugging and testing these examples.
 
-## First steps: Eddystone Beacon
+## First steps: [Eddystone Beacon](https://github.com/muncus/bluetooth-projects/eddystone_url)
 
 My first goal was to just get an Eddystone beacon broadcasting, to direct an
 interested user to a web page. The
@@ -50,7 +50,7 @@ The best practice for avoiding problems here is to use a url shortener like
 [goo.gl](http://goo.gl). This has the added benefit of letting you change the
 beacon's destination without having to update the beacon device.
 
-## Next: Playbulb candle emulation
+## Next: Playbulb [candle emulation](https://github.com/muncus/bluetooth-projects/playbulb_candle)
 
 At this point, i'm more familiar with arduino/C++ than with javascript, so I
 opted to create a device that an existing webapp could interact with. I stumbled
@@ -74,7 +74,8 @@ The big takeaway from this example is that i've now implemented entirely custom
 BLE services on the device, with read-only and read-write characteristics. These
 can serve as the basis for any custom services I build later.
 
-## Nordic Uart Service: not-exactly-standard, but close enough.
+## Nordic Uart Service: not-exactly-standard, [but close
+enough](https://github.com/muncus/bluetooth-projects/terminal_echo/).
 
 > Chronologically, this project was the second one i built, not the third. but
 > logically it makes more sense here.
