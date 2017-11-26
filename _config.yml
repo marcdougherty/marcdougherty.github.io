@@ -8,8 +8,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-plugins:
-  - jemoji
 
 # resume things.
 resume_name: 'Marc Dougherty'
@@ -41,3 +39,4 @@ exclude: [
 
 gems:
   - jekyll-feed
+  - jemoji
