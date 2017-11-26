@@ -74,8 +74,7 @@ The big takeaway from this example is that i've now implemented entirely custom
 BLE services on the device, with read-only and read-write characteristics. These
 can serve as the basis for any custom services I build later.
 
-## Nordic Uart Service: not-exactly-standard, [but close
-enough](https://github.com/muncus/bluetooth-projects/terminal_echo/).
+## Nordic Uart Service: not-exactly-standard, [but close enough](https://github.com/muncus/bluetooth-projects/terminal_echo/).
 
 > Chronologically, this project was the second one i built, not the third. but
 > logically it makes more sense here.
