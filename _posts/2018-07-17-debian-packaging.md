@@ -4,7 +4,7 @@ title:  Building Debian packages for my own use.
 
 I've been a debian/ubuntu user for **years**, but had always been intimidated by
 the packaging process (because i tried to read the [New Maintainer's
-Guide](https://www.debian.org/doc/manuals/maint-guide/).
+Guide](https://www.debian.org/doc/manuals/maint-guide/)).
 I decided to give it a shot recently, because I was building experimental
 software for the raspberry pi, and grew tired for `scp` and `rsync`.
 
