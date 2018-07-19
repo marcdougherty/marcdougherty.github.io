@@ -8,4 +8,4 @@ To generate a pdf of my resume: `wkhtmltopdf $BASEURL/resume-plain resume.pdf`
 
 ## TODO
 
-* stuff.
+* better use of collections and tags.

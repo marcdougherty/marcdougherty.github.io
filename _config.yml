@@ -16,6 +16,8 @@ github_username: 'muncus'
 twitter_username: 'muncus'
 linkedin_username: 'doughertymarc'
 
+paginate: 7
+
 defaults:
   -
     scope:
@@ -40,3 +42,4 @@ exclude: [
 gems:
   - jekyll-feed
   - jemoji
+  - jekyll-paginate
