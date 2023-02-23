@@ -1,0 +1,13 @@
+defaultAppearance = "dark"
+enableSearch = true
+
+[homepage]
+showRecent = true
+showRecentItems = 10
+showMoreLink = true
+
+[article]
+showAuthor = false
+showPagination = false
+showTableOfContents = true
+sharingLinks = []

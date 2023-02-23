@@ -1,0 +1,16 @@
+baseURL = 'https://muncus.github.io'
+defaultContentLanguage = "en"
+languageCode = 'en-us'
+title = "Marc's Blog"
+enableEmoji = true
+canonicalizeURL = true
+enableGitInfo = true
+# TODO: googleAnalytics
+# theme = 'blowfish'
+
+[frontmatter]
+date = ['date', ':git', ':fileModTime', ':default']
+lastmod = ['lastmod', ':fileModTime', ':default']
+
+[permalink]
+posts = '/:year/:month/:title/'
