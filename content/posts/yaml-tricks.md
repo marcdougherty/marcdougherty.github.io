@@ -2,6 +2,7 @@
 title: Handy Yaml Tricks!
 published: true
 tags: yaml
+date: 2023-02-08
 ---
 
 (This content was originally published at https://dev.to/muncus/handy-yaml-tricks-415p)
