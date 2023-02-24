@@ -10,7 +10,7 @@ My first attempt at a muni display was an Arduino with 3 big LEDs, laid out as a
 
 The most obvious drawback here was the need for a computer to run the python script. I was eventually able to get the script running on a wireless access point with DD-WRT, but the package was still rather awkward.
 
-![rev 1 photo](images/muni-v1.jpg "The first working prototype")
+![rev 1 photo](/images/muni-v1.jpg "The first working prototype")
 
 Around this time, [Quick Muni](https://play.google.com/store/apps/details?id=com.worldofbilly.quickmuni) came out, so I had a quick phone-based way to check trains, and I lost interest for a while.
 
@@ -20,7 +20,7 @@ Some time later, I bought a [Particle Photon](http://particle.io) (formerly know
 
 Instead of a stoplight, I found a small servo, and got the Photon using it very quickly thanks to their builtin `Servo` library. Original Proof-of-concept pushed the train times to the device through the Particle Cloud api, but I wanted the device to be a bit more self-sufficient.
 
-![rev2 photo](images/muni2-back.jpg "Wiring photo of muni 2.0")
+![rev2 photo](/images/muni2-back.jpg "Wiring photo of muni 2.0")
 
 To that end, I put together a web server with some configuration that maps the Particle device name (which the device can fetch from the Particle cloud api) to a set of nextbus query parameters. The device requests `/times/scrapple_ferret` (for instance), and the server returns the number of minutes until the next estimated arrival at the stop at which `scrapple_ferret` is configured.
 
@@ -28,6 +28,6 @@ The servo, however, makes a slight noise when it moves, and I found that having 
 
 All that remained was to paint up a display face, vaguely resembling the from of an SF Muni train, and hang it on the wall!
 
-![final enclosure](images/muni2-final.jpg "Finished enclosure, on wall")
+![final enclosure](/images/muni2-final.jpg "Finished enclosure, on wall")
 
 The code for this project is available from [github.com/muncus/muni-display](https://github.com/muncus/muni-display).
