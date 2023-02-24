@@ -8,6 +8,8 @@ headline = "Socio-technical systems engineer"
 bio = "Developer, SRE, Artist, and Father."
 links = [
   { github = "https://github.com/muncus" },
-  { twitter = "https://twitter.com/muncus" }
+  { twitter = "https://twitter.com/muncus" },
+  { dev = "https://dev.to/muncus" },
+  { medium = "https://medium.com/@muncus" }
 ]
 

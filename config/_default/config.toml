@@ -6,11 +6,10 @@ enableEmoji = true
 canonicalizeURL = true
 enableGitInfo = true
 # TODO: googleAnalytics
-# theme = 'blowfish'
 
 [frontmatter]
 date = ['date', ':git', ':fileModTime', ':default']
-lastmod = ['lastmod', ':fileModTime', ':default']
+lastmod = [':git']
 
 [permalink]
 posts = '/:year/:month/:title/'
