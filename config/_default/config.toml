@@ -1,15 +1,13 @@
-baseURL = 'https://muncus.github.io'
+baseURL = 'https://marcdougherty.com'
 defaultContentLanguage = "en"
 languageCode = 'en-us'
 title = "Marc's Blog"
 enableEmoji = true
-canonicalizeURL = true
 enableGitInfo = true
 # TODO: googleAnalytics
 
 [frontmatter]
-date = ['date', ':git', ':fileModTime', ':default']
-lastmod = [':git']
+date = [':filename', 'date', ':git', ':fileModTime', ':default']
 
 [permalink]
 posts = '/:year/:month/:title/'

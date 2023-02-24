@@ -1,5 +1,6 @@
 defaultAppearance = "dark"
 enableSearch = true
+mainSections = [ "posts" ]
 
 [homepage]
 showRecent = true
