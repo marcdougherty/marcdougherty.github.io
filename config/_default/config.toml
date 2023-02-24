@@ -1,0 +1,13 @@
+baseURL = 'https://marcdougherty.com'
+defaultContentLanguage = "en"
+languageCode = 'en-us'
+title = "Marc's Blog"
+enableEmoji = true
+enableGitInfo = true
+# TODO: googleAnalytics
+
+[frontmatter]
+date = [':filename', 'date', ':git', ':fileModTime', ':default']
+
+[permalink]
+posts = '/:year/:month/:title/'

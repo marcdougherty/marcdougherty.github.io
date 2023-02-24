@@ -1,0 +1,16 @@
+defaultAppearance = "dark"
+enableSearch = true
+mainSections = [ "posts" ]
+
+[homepage]
+showRecent = true
+showRecentItems = 5
+showMoreLink = true
+
+[article]
+showAuthor = false
+showPagination = false
+showTableOfContents = true
+sharingLinks = []
+showTaxonomies = true
+showDateUpdated = true
