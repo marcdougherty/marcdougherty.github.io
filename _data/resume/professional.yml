@@ -1,7 +1,19 @@
 - org: Google, Inc.
+  role: Site Reliability Engineer - Corp Eng
+  location: Seattle, WA
+  when: 2017 - Present
+  bullets:
+    - Chartered and led a Consulting team that helps 20+ teams each quarter through Office Hours and hands-on partnership projects.
+    - Drove SLO adoption Corp Eng through education and simplification, resulting in a 5x increase in adoption within 18 months.
+    - Tracked, summarized and presented progress of SLO work to Director/VP audience.
+    - Set technical direction for a team of 10 SREs, including prioritization decisions and quarterly goal setting.
+    - Identify, document, and advocate for assorted Best Practices throughout the organization.
+    - Mentored more junior teammates, and engineers from other SRE and Developer teams.
+
+- org: Google, Inc.
   role: Site Reliability Engineer - App Engine
   location: San Francisco, CA
-  when: 2012 - Present
+  when: 2012 - 2017
   bullets:
     - Ensured the uptime, reliability and scalability of App Engine.
     - Facilitated the explosive growth of large App Engine customers by making
@@ -9,7 +21,7 @@
     - Wrote policy and automation for App Engine pushes, enabling 5x increase
       in push velocity.
     - Automated sharded backups of all App Engine customer data.
-    - Participate in on-call rotations, incident response, and contributed to
+    - Participated in on-call rotations, incident response, and contributed to
       numerous postmortems.
 
 - org: Google, Inc.
@@ -22,24 +34,20 @@
       devices.
     - Trained new London-based team to support services used by all Android devices.
     - Designed and built unified monitoring framework to simplify configuration and dashboarding.
-    - Expanded the exising rollout automation to support a wider set of services.
     - Onboarded several new services, converting them to use existing Best Practices with minimal disruption.
 
-- org: Google, Inc.
-  role: Corp Reliability Engineer
-  location: San Francisco, CA
-  when: 2006 - 2009
-  bullets:
-    - Responsible for several internal-only services used by the sales and
-      customer support organizations.
-    - Led team of 4 engineers in the onboarding of CRM software.
-    - Established monitoring and service management best practices.
-    - Built monitoring and launch dashboards for Android's initial public launch (2008).
+# - org: Google, Inc.
+#   role: Corp Reliability Engineer
+#   location: San Francisco, CA
+#   when: 2006 - 2009
+#   bullets:
+#     - Led team of 4 engineers in the operation of internal-only sales and customer support tools.
+#     - Built monitoring and launch dashboards for Android's initial public launch (2008).
 
-- org: Turbine, Inc.
-  role: Systems Administrator
-  location: Norwood, MA
-  when: 2004 - 2006
-  bullets:
-    - 'Developed automation and tools for use in game development'
-    - 'Maintained various internal corporate systems'
+#- org: Turbine, Inc.
+#  role: Systems Administrator
+#  location: Norwood, MA
+#  when: 2004 - 2006
+#  bullets:
+#    - 'Developed automation and tools for use in game development'
+#    - 'Maintained various internal corporate systems'

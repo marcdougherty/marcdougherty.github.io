@@ -1,17 +1,34 @@
 - Languages:
     primary:
+      - Go
       - Python
-      - Bash
-      - Ruby
-    secondary:
       - Java
-      - C/C++
+    secondary:
+      - Ruby
+      - Bash
+      - Rego
+      - Arduino/Processing
 - Tools:
     primary:
       - Git
-      - Docker
-- Cloud Services:
-    primary:
-      - App Engine
+      - Github
+      - VS Code
+      - Docker / OCI Containers
+      - Open Policy Agent / Conftest
+      - Slack
+      - Discord
     secondary:
-      - Google Cloud (Compute Engine, Cloud Storage)
+      - OBS
+- Soft Skills:
+    primary:
+     - Communication
+     - Organizational Influence
+     - Relationship Building
+     - Teaching
+     - Mentoring
+# - Cloud Services:
+#     primary:
+#       - App Engine
+#       - Stackdriver
+#     secondary:
+#       - Google Cloud (Compute Engine, Cloud Storage, Container Registry)
