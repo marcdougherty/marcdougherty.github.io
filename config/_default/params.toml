@@ -1,6 +1,7 @@
 defaultAppearance = "dark"
 enableSearch = true
 mainSections = [ "posts" ]
+enableCodeCopy = true
 
 [homepage]
 showRecent = true
