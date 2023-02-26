@@ -1,11 +1,22 @@
 ## muncus.github.io / marcdougherty.com
 
-To bootstrap the ruby modules needed: `bundle install --binstubs`
+A personal website, created with Hugo (gohugo.io)
 
-To test serving: `./bin/jekyll serve -D`
+For local preview with drafts: `hugo serve -D`
 
-To generate a pdf of my resume: `wkhtmltopdf $BASEURL/resume-plain resume.pdf`
+For deployment, just push to `main` branch.
+Deployment is handled by Github Actions workflow in `.github/workflows/gh-pages.yml`
 
-## TODO
+# Republishing Notes:
 
-* better use of collections and tags.
+- To republish an article on medium, use the [import a
+  story](//medium.com/p/import) tool, and past in a URL.
+
+- To republish on Dev (dev.to): paste your markdown content into the input box
+  (after removing any hugo-specific shortcodes!!). Be sure to set
+  `canonical_url` in the UI under "post options" (the little hexagon). This can
+  also be set in the frontmatter when posting via the api.
+
+# TODO:
+
+- improve republishing experience.
