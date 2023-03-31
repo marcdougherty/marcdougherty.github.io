@@ -1,7 +1,7 @@
 ---
 title: Handy Yaml Tricks!
 published: true
-tags: yaml
+tags: [ yaml ]
 date: 2023-02-08
 ---
 
