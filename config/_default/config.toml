@@ -7,7 +7,7 @@ enableGitInfo = true
 googleAnalytics = 'G-31G86DYMCL'
 
 [frontmatter]
-date = [':filename', 'date', ':git', ':fileModTime', ':default']
+date = [':filename', ':git', ':default']
 
 [permalink]
 posts = '/:year/:month/:title/'
