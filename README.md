@@ -10,7 +10,7 @@ Deployment is handled by Github Actions workflow in `.github/workflows/gh-pages.
 # Republishing Notes:
 
 - To republish an article on medium, use the [import a
-  story](//medium.com/p/import) tool, and past in a URL.
+  story](https://medium.com/p/import) tool, and past in a URL.
 
 - To republish on Dev (dev.to): paste your markdown content into the input box
   (after removing any hugo-specific shortcodes!!). Be sure to set
