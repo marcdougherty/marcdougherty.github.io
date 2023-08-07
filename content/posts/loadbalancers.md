@@ -80,13 +80,26 @@ the actual gcs bucket (in the `bucketName` field).
 
 # Recap
 
-This probably deserves a diagram:
+This probably deserves a diagram (with links to the relevant docs):
 
 {{<mermaid>}}
-erDiagram
-    URL-Map }|--|| Backend_Service : "pathMatcher.defaultService"
-    Backend_Service ||--o{ NEGs : "backend[].group"
-    NEGs ||--o{ "various backend services" : "points to"
+classDiagram
+    direction LR
+    class urlmap["URL Map"]{
+      pathMatcher.defaultService
+      pathmatcher.pathRules[].service
+    }
+    class backendservice {
+      backends[].group
+    }
+    class NEG {
+        various types
+    }
+    urlmap --> backendservice
+    backendservice --> NEG
+    link urlmap "https://cloud.google.com/compute/docs/reference/rest/v1/urlMaps"
+    link backendservice "https://cloud.google.com/compute/docs/reference/rest/v1/backendServices"
+    link NEG "https://cloud.google.com/load-balancing/docs/negs/"
 {{</mermaid>}}
 
 I hope this little tour through the jungle of LB products has been helpful. I

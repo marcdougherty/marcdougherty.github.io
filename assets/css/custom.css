@@ -1,0 +1,4 @@
+/* Mermaid diagram arrows have low-contrast with dark bg colors. */
+.mermaid {
+  background: white
+}
