@@ -10,8 +10,8 @@ googleAnalytics = 'G-31G86DYMCL'
 date = [':filename', 'date', 'publishDate', ':git', 'lastmod']
 lastmod = ['lastmod', ':git', 'date']
 
-[permalink]
-posts = '/:year/:month/:title/'
+[permalinks.page]
+  posts = '/:year/:slug/'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
