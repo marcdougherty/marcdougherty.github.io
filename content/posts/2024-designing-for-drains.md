@@ -3,18 +3,32 @@ date: 2024-04-05
 title: Architecting for Traffic Drains
 ---
 
-"Drain" is a term commonly used to describe moving customer traffic away from a
-problem. Drains are a [generic
-mitigation](https://www.oreilly.com/content/generic-mitigations/), which allows
-you to use it even before you understand the cause of the problem!
+Distributed systems are capable of fast change and adaptation, and highly
+tolerant of constrained failures.  This is often achieved by building systems
+that can exclude failing components from the larger system, but this capability
+is not automatic. Many large systems use load balancers to "route around a
+problem" by removing failed components. This process is often called "draining".
+
+Drains are a [generic
+mitigation](https://www.oreilly.com/content/generic-mitigations/), which means
+you can use them even if you don't understand the cause of the problem (yet)!
 
 But to take advantage of drains, your services must be architected to support
 them. The details will vary depending on the service, but common requirements
 include:
 
-- *Independent* serving locations (multiple zones/regions)
-- Any Request may be served from any available region
-- A frontend load balancer with adjustable backends
+Serving locations in separate [failure domains](https://en.wikipedia.org/wiki/Failure_domain)
+: Often achieved by using multiple zones/regions from your cloud provider, this
+  ensures outages in one location do not affect others.
+
+Requests may be served from any available location
+: If a whole region is unavailable, the requests may go to a neighboring region.
+  Any data needed to serve the request should be present in multiple regions.
+
+A frontend load balancer with configurable backends
+: To perform drains, we need to change the available backends in the load
+  balancer. Most load balancers support this, but some managed load balancers
+  may not allow you to customize the set of backends.
 
 
 ## Example Architecture
@@ -26,17 +40,21 @@ the following architecture.
 
 flowchart TB
     lb(Global Load Balancer)
-    subgraph Cl-A [GKE Cluster A]
+    subgraph RegionX ["Region X"]
+    subgraph Cl-A ["GKE Cluster A"]
         direction TB
         svcA("k8s Service") --> 
         depA("k8s Deployment") -->
         podA("k8s Pod")
     end
-    subgraph Cl-B [GKE Cluster B]
+    end
+    subgraph RegionY ["Region Y"]
+    subgraph Cl-B ["GKE Cluster B"]
         direction TB
         svcB("k8s Service") --> 
         depB("k8s Deployment") -->
         podB("k8s Pod")
+    end
     end
 
     lb --> Cl-A
@@ -108,9 +126,10 @@ information is available as annotations on the kubernetes objects. You can view
 these annotations directly with `kubectl get service whereami` - they are
 encoded as a json object under the key `cloud.google.com/neg-status`.
 
-The provided terraform parses out the relevant information from the Service
-objects in both clusters, and populates a single Backend Service using both
-Network Endpoint Groups.
+The provided terraform [parses out the relevant
+information](https://github.com/muncus/drain-demo/blob/main/02-loadbalancer/global-lb.tf#L22-L24)
+from the Service objects in both clusters, and populates a single Backend
+Service using both Network Endpoint Groups.
 
 To deploy the load balancer, run the following commands from the
 [`02-loadbalancer`
@@ -138,11 +157,18 @@ while true; do curl --silent ${loadbalancer_url} | jq .cluster_name ; sleep 0.2 
 
 ## Performing a traffic drain
 
-Now that we have our loadbalancer using the `whereami` service in both clusters,
-we can drain one!
+Our shiny new global load balancer is working great! Until late one night, when
+we get paged because the site is serving errors! :warning: :pager:
 
-Each instance of the service is listed in its own `backend` stanza in the
-[Backend Service
+A quick look at our monitoring dashboards show errors are *only* coming from
+Cluster A. We could spend our time investigating exactly what makes Cluster A
+different, but with complex distributed systems that can take a lot of
+investigation - meanwhile our users are getting errors. To restore service as
+quickly as possible, we can drain Cluster A, go back to sleep, and debug in the
+morning once we've had coffee :coffee:.
+
+To perform a drain, we'll need to edit the `backend` stanzas in our load
+balancer's [Backend Service
 object](https://github.com/muncus/drain-demo/blob/main/02-loadbalancer/global-lb.tf#L57-L68)
 
 ```
