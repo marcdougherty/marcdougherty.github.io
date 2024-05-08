@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2024-04-09
 title: Terraform and GKE Annotations
 ---
@@ -9,8 +8,8 @@ some rough edges when these two systems interact. Kubernetes - specifically
 Google Kubernetes Engine (GKE) makes extensive use of annotations to store
 additional information about GKE resources.
 
-I encountered this when working on an [article about traffic drains](TODO), and
-you can see it for yourself on any Service object. By default, GKE clusters
+I encountered this when working on an [article about traffic drains](https://www.marcdougherty.com/2024/architecting-for-traffic-drains/), and
+you can see it for yourself on Service objects. By default, GKE clusters
 contain several services that show this - for example, you can inspect the
 annotations on the built-in `default-http-backend` service:
 
