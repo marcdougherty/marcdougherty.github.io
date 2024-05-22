@@ -139,7 +139,7 @@ resource "google_compute_backend_service" "my_service" {
     for_each = ["group1", "group2" ]
     iterator = "thing"
     content {
-      group = thing
+      group = thing.value
     }
   }
 }
