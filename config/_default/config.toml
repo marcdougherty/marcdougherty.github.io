@@ -16,3 +16,7 @@ lastmod = ['lastmod', ':git', 'date', ':fileModTime' ]
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+  series = "series"
