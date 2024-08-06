@@ -59,6 +59,15 @@ frameworks like langchain. This choice insulates you from changes in the
 underlying APIs, and allow you to move between models (and model hosting
 platforms!) with minimal updates to your codebase.
 
+{{< alert icon="fire" >}} vLLM has **two different** API server implementations.
+One is OpenAI compatible
+([`vllm.entrypoints.openai.api_server`](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/openai/api_server.py),
+while the other is not
+([`vllm.entrypoints.api_server`](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py)).
+
+The differences between the two are subtle so be careful!
+{{< /alert >}}
+
 While the client interface aspect may seem straightforward, there are some other
 effects that are less apparent.
 
