@@ -12,6 +12,36 @@ You can think of the model itself as a big bundle of data - many models are
 distributed as a compressed archive of files. To make the model useful, you need
 a way to query it - which is where model serving layers come in.
 
+The following diagram illustrates some of the various parts involved in AI model
+serving:
+
+{{< mermaid >}}
+flowchart TD
+    client["client"]
+    vertex["Vertex AI Endpoint"]
+    subgraph "serving container"
+      subgraph "serving layer (e.g. vllm/hexllm/TGI)"
+      api1["Chat API"]
+
+      api2["Completion API"]
+      end
+      m["model"]
+      api1 -.-> m
+      api2 --> m
+    end
+
+    client --> vertex
+    client -. (non-Vertex) .- api1
+    vertex --- api2
+
+    click api1 "https://platform.openai.com/docs/api-reference/chat"
+    click api2 "https://platform.openai.com/docs/api-reference/completions/create"
+
+{{< /mermaid >}}
+
+The dotted line request path, using the Chat API, is not currently available for
+models hosted on Google's Vertex AI platform.
+
 While AI technology is still rapidly evolving, the APIs published by
 [OpenAI](https://platform.openai.com/docs/api-reference/introduction) are
 becoming broadly used by other model serving layers. Specifically the [OpenAI
