@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Productionization on Marc Dougherty</title><link>https://www.marcdougherty.com/series/ai-productionization/</link><description>Recent content in AI Productionization on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Marc Dougherty</copyright><lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.marcdougherty.com/series/ai-productionization/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Client libraries and their eccentricities</title><link>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</guid><description>As discussed earlier in this series, there are several factors that affect how client libraries communicate with your AI Model service.
-In this article, I&amp;rsquo;ll be demonstrating using some of the popular client libraries to connect to models served in 3 different ways, to demonstrate the usability and flexibility of these client libraries. For this comparison, I&amp;rsquo;ll be using python since it is the most common choice in LLM user communities.</description></item><item><title>AI Model APIs</title><link>https://www.marcdougherty.com/2024/ai-model-apis/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-apis/</guid><description>As noted in the previous post about AI Model Serving layers, your serving layer determines which APIs are presented, and which client libraries you can use.
-In this article, I&amp;rsquo;ll cover the most common AI APIs and where you are likely to encounter them.
-Common APIs # These APIs are in widespread use for AI model serving. Most AI Model serving layers will support both of these APIs. Chat-style completions are increasingly popular, so if you are working with newer models, you should start there.</description></item><item><title>AI model serving layers</title><link>https://www.marcdougherty.com/2024/ai-model-serving-layers/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-serving-layers/</guid><description>When it comes to AI, most of the discussion focuses on the model itself, but there&amp;rsquo;s an important decision that many organizations are overlooking - the choice of their AI model serving layer.
-You can think of the model itself as a big bundle of data - many models are distributed as a compressed archive of files. To make the model useful, you need a way to query it - which is where model serving layers come in.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Productionization on Marc Dougherty</title><link>https://www.marcdougherty.com/series/ai-productionization/</link><description>Recent content in AI Productionization on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025</copyright><lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.marcdougherty.com/series/ai-productionization/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Client libraries and their eccentricities</title><link>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</guid><description>&lt;p&gt;As discussed earlier in this series, there are several factors that affect how
+client libraries communicate with your AI Model service.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ll be demonstrating using some of the popular client
+libraries to connect to models served in 3 different ways, to demonstrate the
+usability and flexibility of these client libraries. For this comparison, I&amp;rsquo;ll
+be using python since it is the most common choice in LLM user communities.&lt;/p&gt;</description></item><item><title>AI Model APIs</title><link>https://www.marcdougherty.com/2024/ai-model-apis/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-apis/</guid><description>&lt;p&gt;As noted in the previous post about &lt;a
+href="https://www.marcdougherty.com/2024/ai-model-serving-layers/"
+target="_blank"
+&gt;AI Model Serving layers&lt;/a&gt;, your serving layer determines which APIs are
+presented, and which client libraries you can use.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ll cover the most common AI APIs and where you are likely to
+encounter them.&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Common APIs
+&lt;div id="common-apis" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#common-apis" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;These APIs are in widespread use for AI model serving. Most AI Model serving
+layers will support both of these APIs. Chat-style completions are increasingly
+popular, so if you are working with newer models, you should start there.&lt;/p&gt;</description></item><item><title>AI model serving layers</title><link>https://www.marcdougherty.com/2024/ai-model-serving-layers/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-serving-layers/</guid><description>&lt;p&gt;When it comes to AI, most of the discussion focuses on the model itself, but
+there&amp;rsquo;s an important decision that many organizations are overlooking - the
+choice of their AI model serving layer.&lt;/p&gt;
+&lt;p&gt;You can think of the model itself as a big bundle of data - many models are
+distributed as a compressed archive of files. To make the model useful, you need
+a way to query it - which is where model serving layers come in.&lt;/p&gt;</description></item></channel></rss>

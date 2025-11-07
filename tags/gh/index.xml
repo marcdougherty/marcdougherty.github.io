@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gh on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/gh/</link><description>Recent content in Gh on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Marc Dougherty</copyright><lastBuildDate>Fri, 24 Feb 2023 22:51:47 -0800</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/gh/index.xml" rel="self" type="application/rss+xml"/><item><title>More Github CLI Tips</title><link>https://www.marcdougherty.com/2023/more-github-cli-tips/</link><pubDate>Fri, 24 Feb 2023 22:51:47 -0800</pubDate><guid>https://www.marcdougherty.com/2023/more-github-cli-tips/</guid><description>Last year, I started working in a number of public Github repositories, and learned to use the gh Github CLI. I wrote an article about using the github cli with multiple repos, but given how much my workflow has changed, I think its time for an update.
-Picking a random teammate # Sometimes, I need to pick a human to be responsible for something (usually a PR review). When there is no obvious choice (for example, someone who already knows the context of the PR), I caught myself relying on the same team members repeatedly.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gh on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/gh/</link><description>Recent content in Gh on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025</copyright><lastBuildDate>Fri, 24 Feb 2023 22:51:47 -0800</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/gh/index.xml" rel="self" type="application/rss+xml"/><item><title>More Github CLI Tips</title><link>https://www.marcdougherty.com/2023/more-github-cli-tips/</link><pubDate>Fri, 24 Feb 2023 22:51:47 -0800</pubDate><guid>https://www.marcdougherty.com/2023/more-github-cli-tips/</guid><description>&lt;p&gt;Last year, I started working in a number of public Github repositories, and
+learned to use the &lt;a
+href="//cli.github.com"&gt;&lt;code&gt;gh&lt;/code&gt; Github CLI&lt;/a&gt;. I wrote an article about
+&lt;a
+href="https://dev.to/muncus/using-the-github-cli-with-multiple-repos-38k"
+target="_blank"
+&gt;using the github cli with multiple
+repos&lt;/a&gt;, but
+given how much my workflow has changed, I think its time for an update.&lt;/p&gt;
+&lt;h3 class="relative group"&gt;Picking a random teammate
+&lt;div id="picking-a-random-teammate" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#picking-a-random-teammate" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;Sometimes, I need to pick a human to be responsible for something (usually
+a PR review). When there is no obvious choice (for example, someone who already
+knows the context of the PR), I caught myself relying on the same team members
+repeatedly. While this is not a big issue, I wanted a more &amp;ldquo;fair&amp;rdquo; way to pick a
+random assignee.&lt;/p&gt;</description></item></channel></rss>

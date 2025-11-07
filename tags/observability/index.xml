@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Observability on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/observability/</link><description>Recent content in Observability on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Marc Dougherty</copyright><lastBuildDate>Fri, 31 Mar 2023 16:33:29 -0700</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/observability/index.xml" rel="self" type="application/rss+xml"/><item><title>Day 2 Observability - calls to other services</title><link>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</link><pubDate>Fri, 31 Mar 2023 16:33:29 -0700</pubDate><guid>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</guid><description>This post assumes you&amp;rsquo;re already familiar with OpenTelemetry, and are already collecting some observability data.
-Whether you&amp;rsquo;ve chosen automatic instrumentation, or manual, you&amp;rsquo;re now collecting telemetry data from your code. Congratulations &amp;#x1f389;
-But what about all the other code you&amp;rsquo;re using? When your service makes a database query, or fetches weather data, you&amp;rsquo;re using someone else&amp;rsquo;s code. These other services may have their own production problems - can you separate issues in your code from issues in a dependency with your current observability signals?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Observability on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/observability/</link><description>Recent content in Observability on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025</copyright><lastBuildDate>Fri, 31 Mar 2023 16:33:29 -0700</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/observability/index.xml" rel="self" type="application/rss+xml"/><item><title>Day 2 Observability - calls to other services</title><link>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</link><pubDate>Fri, 31 Mar 2023 16:33:29 -0700</pubDate><guid>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</guid><description>&lt;p&gt;This post assumes you&amp;rsquo;re already familiar with
+&lt;a
+href="http://opentelemetry.io"
+target="_blank"
+&gt;OpenTelemetry&lt;/a&gt;, and are already collecting some
+observability data.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;ve chosen automatic instrumentation, or manual, you&amp;rsquo;re now
+collecting telemetry data from your code. Congratulations &amp;#x1f389;&lt;/p&gt;
+&lt;p&gt;But what about all the &lt;em&gt;other&lt;/em&gt; code you&amp;rsquo;re using? When your service makes a
+database query, or fetches weather data, you&amp;rsquo;re using someone else&amp;rsquo;s code. These
+other services may have their own production problems - can you separate issues
+in your code from issues in a dependency with your current observability
+signals?&lt;/p&gt;</description></item></channel></rss>

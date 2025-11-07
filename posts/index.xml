@@ -1,18 +1,174 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Marc Dougherty</title><link>https://www.marcdougherty.com/posts/</link><description>Recent content in Posts on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Marc Dougherty</copyright><lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.marcdougherty.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Client libraries and their eccentricities</title><link>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</guid><description>As discussed earlier in this series, there are several factors that affect how client libraries communicate with your AI Model service.
-In this article, I&amp;rsquo;ll be demonstrating using some of the popular client libraries to connect to models served in 3 different ways, to demonstrate the usability and flexibility of these client libraries. For this comparison, I&amp;rsquo;ll be using python since it is the most common choice in LLM user communities.</description></item><item><title>AI Model APIs</title><link>https://www.marcdougherty.com/2024/ai-model-apis/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-apis/</guid><description>As noted in the previous post about AI Model Serving layers, your serving layer determines which APIs are presented, and which client libraries you can use.
-In this article, I&amp;rsquo;ll cover the most common AI APIs and where you are likely to encounter them.
-Common APIs # These APIs are in widespread use for AI model serving. Most AI Model serving layers will support both of these APIs. Chat-style completions are increasingly popular, so if you are working with newer models, you should start there.</description></item><item><title>AI model serving layers</title><link>https://www.marcdougherty.com/2024/ai-model-serving-layers/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-serving-layers/</guid><description>When it comes to AI, most of the discussion focuses on the model itself, but there&amp;rsquo;s an important decision that many organizations are overlooking - the choice of their AI model serving layer.
-You can think of the model itself as a big bundle of data - many models are distributed as a compressed archive of files. To make the model useful, you need a way to query it - which is where model serving layers come in.</description></item><item><title>Multi-cluster load balancing with Google Cloud</title><link>https://www.marcdougherty.com/2024/multi-cluster-load-balancing-with-google-cloud/</link><pubDate>Thu, 27 Jun 2024 13:17:33 -0700</pubDate><guid>https://www.marcdougherty.com/2024/multi-cluster-load-balancing-with-google-cloud/</guid><description>To build a high-availability service in the cloud, we need to be able to serve from multiple independent failure domains. We can achieve this with multiple kubernetes clusters in different cloud regions, but we&amp;rsquo;ll need a load balancer that can route to all of our clusters.
-This article will provide an overview of 3 possible options for load balancing between kubernetes clusters on Google Cloud. Because I&amp;rsquo;m looking at this through the lens of Platform Engineering, I&amp;rsquo;ll also be discussing the breakdown of responsibilities and controls between a Platform team and an Application team.</description></item><item><title>Building blocks of a Developer Platform</title><link>https://www.marcdougherty.com/2024/building-blocks-of-a-developer-platform/</link><pubDate>Mon, 17 Jun 2024 11:35:20 -0700</pubDate><guid>https://www.marcdougherty.com/2024/building-blocks-of-a-developer-platform/</guid><description>I have read a lot of articles about Platform Engineering recently, and many of them talk about platforms as a completely new way for your developers to work. In fact, many of those articles are trying to sell you their platform!
-In this series, I&amp;rsquo;ll be exploring how you can create a platform starting from the tools and processes that your team is already using.
-I&amp;rsquo;ll be writing with a focus on software development teams working in a Cloud environment, but most of this applies to other environments and teams, though some interpretation may be necessary.</description></item><item><title>Three flavors of Terraform iteration</title><link>https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/</link><pubDate>Wed, 22 May 2024 12:07:15 -0700</pubDate><guid>https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/</guid><description>I was writing a Terraform module to create a Google Cloud Load Balancer with an arbitrary set of GKE services as backends. To achieve this, I needed to learn about 3 different methods of iteration that are supported in Terraform, when to use each of them. If you&amp;rsquo;d like to better understand the many flavors of iteration available in Terraform, this article can help!
-A bit of background # My goal with this terraform module is to turn a list of kubernetes_service objects into a google_compute_backend_service.</description></item><item><title>Terraform and GKE Annotations</title><link>https://www.marcdougherty.com/2024/terraform-and-gke-annotations/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/terraform-and-gke-annotations/</guid><description>Terraform and Kubernetes are both declarative systems, but there can be some rough edges when these two systems interact. Kubernetes - specifically Google Kubernetes Engine (GKE) makes extensive use of annotations to store additional information about GKE resources.
-I encountered this when working on an article about traffic drains, and you can see it for yourself on Service objects. By default, GKE clusters contain several services that show this - for example, you can inspect the annotations on the built-in default-http-backend service:</description></item><item><title>Architecting for Traffic Drains</title><link>https://www.marcdougherty.com/2024/architecting-for-traffic-drains/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/architecting-for-traffic-drains/</guid><description>Distributed systems are capable of fast change and adaptation, and highly tolerant of constrained failures. This is often achieved by building systems that can exclude failing components from the larger system, but this capability is not automatic. Many large systems use load balancers to &amp;ldquo;route around a problem&amp;rdquo; by removing failed components. This process is often called &amp;ldquo;draining&amp;rdquo;.
-Drains are a generic mitigation, which means you can use them even if you don&amp;rsquo;t understand the cause of the problem (yet)!</description></item><item><title>Testing changes to Renovate configs</title><link>https://www.marcdougherty.com/2023/testing-changes-to-renovate-configs/</link><pubDate>Thu, 21 Sep 2023 16:46:15 -0700</pubDate><guid>https://www.marcdougherty.com/2023/testing-changes-to-renovate-configs/</guid><description>I get a bit nervous whenever I touch renovate.json files, because I did not know how to test the effects of my changes. Well, this week I spent some quality time with Renovate and while the results are not perfect, they&amp;rsquo;re a lot better than what I had before!
-If you&amp;rsquo;re not familiar with Renovate, it is a convenient way to keep your dependencies up to date. It understands dependencies in many language ecosystems, and supports a variety of ways to run and configure Renovate.</description></item><item><title>Understanding GCP's Loadbalancer models</title><link>https://www.marcdougherty.com/2023/understanding-gcps-loadbalancer-models/</link><pubDate>Mon, 07 Aug 2023 16:50:12 -0700</pubDate><guid>https://www.marcdougherty.com/2023/understanding-gcps-loadbalancer-models/</guid><description>I recently spent some time with external application loadbalancers in GCP, and I found the data model pretty difficult to work with. What follows is an attempt to better explain these concepts, practicing some of the advice from Docs for Developers, which I&amp;rsquo;ve been reading.
-Overview # External Application Loadbalancers are represented in the API by a series of related configuration objects. There is no single &amp;ldquo;Loadbalancer&amp;rdquo; object, so it is important to ensure the relevant objects all reference each other.</description></item><item><title>Day 2 Observability - calls to other services</title><link>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</link><pubDate>Fri, 31 Mar 2023 16:33:29 -0700</pubDate><guid>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</guid><description>This post assumes you&amp;rsquo;re already familiar with OpenTelemetry, and are already collecting some observability data.
-Whether you&amp;rsquo;ve chosen automatic instrumentation, or manual, you&amp;rsquo;re now collecting telemetry data from your code. Congratulations &amp;#x1f389;
-But what about all the other code you&amp;rsquo;re using? When your service makes a database query, or fetches weather data, you&amp;rsquo;re using someone else&amp;rsquo;s code. These other services may have their own production problems - can you separate issues in your code from issues in a dependency with your current observability signals?</description></item><item><title>More Github CLI Tips</title><link>https://www.marcdougherty.com/2023/more-github-cli-tips/</link><pubDate>Fri, 24 Feb 2023 22:51:47 -0800</pubDate><guid>https://www.marcdougherty.com/2023/more-github-cli-tips/</guid><description>Last year, I started working in a number of public Github repositories, and learned to use the gh Github CLI. I wrote an article about using the github cli with multiple repos, but given how much my workflow has changed, I think its time for an update.
-Picking a random teammate # Sometimes, I need to pick a human to be responsible for something (usually a PR review). When there is no obvious choice (for example, someone who already knows the context of the PR), I caught myself relying on the same team members repeatedly.</description></item><item><title>Handy Yaml Tricks!</title><link>https://www.marcdougherty.com/2023/handy-yaml-tricks/</link><pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2023/handy-yaml-tricks/</guid><description>(This content was originally published at https://dev.to/muncus/handy-yaml-tricks-415p)
-In the past few years, YAML ( http://yaml.org) has become an essential part of software, particularly for infrastructure-as-code tools. Yaml at the heart of kubernetes configuration, kubernetes-inspired APIs like Google&amp;rsquo;s config connector, and a number of workflow systems like Google Cloud Workflows and Github Actions.
-In its simplest forms, Yaml is quite human-readable, but over time many of these configurations become more complex, and the documentation of these formats is not always as complete or searchable as we might like.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Marc Dougherty</title><link>https://www.marcdougherty.com/posts/</link><description>Recent content in Posts on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025</copyright><lastBuildDate>Fri, 07 Nov 2025 10:47:09 -0800</lastBuildDate><atom:link href="https://www.marcdougherty.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Go dependencies and API diffs</title><link>https://www.marcdougherty.com/2025/go-dependencies-and-api-diffs/</link><pubDate>Fri, 07 Nov 2025 10:47:09 -0800</pubDate><guid>https://www.marcdougherty.com/2025/go-dependencies-and-api-diffs/</guid><description>&lt;p&gt;Maintaining up-to-date dependencies in a large Go codebase is relatively simple
+&lt;strong&gt;most&lt;/strong&gt; of the time - there are still a few situations that I find challenging.
+Notably, when a package does not comply with &lt;a
+href="http://semver.org"
+target="_blank"
+&gt;semantic
+versioning&lt;/a&gt; and makes API changes in minor versions.&lt;/p&gt;
+&lt;p&gt;Thanks to the Go communities focus on compatability, this does not usually
+affect too many dependencies. Aside from the occasional mistake, two widely used
+projects routinely disobey semantic versioning conventions - Kubernetes and
+OpenTelemetry.&lt;/p&gt;</description></item><item><title>AI Client libraries and their eccentricities</title><link>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-client-libraries-and-their-eccentricities/</guid><description>&lt;p&gt;As discussed earlier in this series, there are several factors that affect how
+client libraries communicate with your AI Model service.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ll be demonstrating using some of the popular client
+libraries to connect to models served in 3 different ways, to demonstrate the
+usability and flexibility of these client libraries. For this comparison, I&amp;rsquo;ll
+be using python since it is the most common choice in LLM user communities.&lt;/p&gt;</description></item><item><title>AI Model APIs</title><link>https://www.marcdougherty.com/2024/ai-model-apis/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-apis/</guid><description>&lt;p&gt;As noted in the previous post about &lt;a
+href="https://www.marcdougherty.com/2024/ai-model-serving-layers/"
+target="_blank"
+&gt;AI Model Serving layers&lt;/a&gt;, your serving layer determines which APIs are
+presented, and which client libraries you can use.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ll cover the most common AI APIs and where you are likely to
+encounter them.&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Common APIs
+&lt;div id="common-apis" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#common-apis" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;These APIs are in widespread use for AI model serving. Most AI Model serving
+layers will support both of these APIs. Chat-style completions are increasingly
+popular, so if you are working with newer models, you should start there.&lt;/p&gt;</description></item><item><title>AI model serving layers</title><link>https://www.marcdougherty.com/2024/ai-model-serving-layers/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/ai-model-serving-layers/</guid><description>&lt;p&gt;When it comes to AI, most of the discussion focuses on the model itself, but
+there&amp;rsquo;s an important decision that many organizations are overlooking - the
+choice of their AI model serving layer.&lt;/p&gt;
+&lt;p&gt;You can think of the model itself as a big bundle of data - many models are
+distributed as a compressed archive of files. To make the model useful, you need
+a way to query it - which is where model serving layers come in.&lt;/p&gt;</description></item><item><title>Multi-cluster load balancing with Google Cloud</title><link>https://www.marcdougherty.com/2024/multi-cluster-load-balancing-with-google-cloud/</link><pubDate>Thu, 27 Jun 2024 13:17:33 -0700</pubDate><guid>https://www.marcdougherty.com/2024/multi-cluster-load-balancing-with-google-cloud/</guid><description>&lt;p&gt;To build a high-availability service in the cloud, we need to be able to serve from multiple independent failure domains. We can achieve this with multiple kubernetes clusters in different cloud regions, but we&amp;rsquo;ll need a load balancer that can route to all of our clusters.&lt;/p&gt;
+&lt;p&gt;This article will provide an overview of 3 possible options for load balancing between kubernetes clusters on Google Cloud. Because I&amp;rsquo;m looking at this through the lens of Platform Engineering, I&amp;rsquo;ll also be discussing the breakdown of responsibilities and controls between a Platform team and an Application team.&lt;/p&gt;</description></item><item><title>Building blocks of a Developer Platform</title><link>https://www.marcdougherty.com/2024/building-blocks-of-a-developer-platform/</link><pubDate>Mon, 17 Jun 2024 11:35:20 -0700</pubDate><guid>https://www.marcdougherty.com/2024/building-blocks-of-a-developer-platform/</guid><description>&lt;p&gt;I have read a lot of articles about Platform Engineering recently, and many of
+them talk about platforms as a completely new way for your developers to work.
+In fact, many of those articles are trying to sell you their platform!&lt;/p&gt;
+&lt;p&gt;In this series, I&amp;rsquo;ll be exploring how you can create a platform starting from
+the tools and processes that your team is already using.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be writing with a focus on software development teams working in a Cloud
+environment, but most of this applies to other environments and teams, though
+some interpretation may be necessary.&lt;/p&gt;</description></item><item><title>Three flavors of Terraform iteration</title><link>https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/</link><pubDate>Wed, 22 May 2024 12:07:15 -0700</pubDate><guid>https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/</guid><description>&lt;p&gt;I was writing a Terraform module to create a Google Cloud Load Balancer with an
+arbitrary set of GKE services as backends. To achieve this, I needed to learn
+about 3 different methods of iteration that are supported in Terraform, when to
+use each of them. If you&amp;rsquo;d like to better understand the many flavors of
+iteration available in Terraform, this article can help!&lt;/p&gt;
+&lt;h2 class="relative group"&gt;A bit of background
+&lt;div id="a-bit-of-background" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#a-bit-of-background" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;My goal with this terraform module is to turn a list of
+&lt;a
+href="https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service"
+target="_blank"
+&gt;&lt;code&gt;kubernetes_service&lt;/code&gt;&lt;/a&gt;
+objects into a
+&lt;a
+href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_backend_service"
+target="_blank"
+&gt;&lt;code&gt;google_compute_backend_service&lt;/code&gt;&lt;/a&gt;.
+This requires a few intermediate objects, and some json parsing in the
+terraform. If you&amp;rsquo;re curious about the outcome of this work, you can check out
+the &lt;a
+href="github.com/googlecloudplatform/reliable-app-platforms"&gt;Reliable App
+Platforms&lt;/a&gt; github
+repository.&lt;/p&gt;</description></item><item><title>Terraform and GKE Annotations</title><link>https://www.marcdougherty.com/2024/terraform-and-gke-annotations/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/terraform-and-gke-annotations/</guid><description>&lt;p&gt;Terraform and Kubernetes are both declarative systems, but there can be
+some rough edges when these two systems interact. Kubernetes - specifically
+Google Kubernetes Engine (GKE) makes extensive use of annotations to store
+additional information about GKE resources.&lt;/p&gt;
+&lt;p&gt;I encountered this when working on an &lt;a
+href="https://www.marcdougherty.com/2024/architecting-for-traffic-drains/"
+target="_blank"
+&gt;article about traffic drains&lt;/a&gt;, and
+you can see it for yourself on Service objects. By default, GKE clusters
+contain several services that show this - for example, you can inspect the
+annotations on the built-in &lt;code&gt;default-http-backend&lt;/code&gt; service:&lt;/p&gt;</description></item><item><title>Architecting for Traffic Drains</title><link>https://www.marcdougherty.com/2024/architecting-for-traffic-drains/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2024/architecting-for-traffic-drains/</guid><description>&lt;p&gt;Distributed systems are capable of fast change and adaptation, and highly
+tolerant of constrained failures. This is often achieved by building systems
+that can exclude failing components from the larger system, but this capability
+is not automatic. Many large systems use load balancers to &amp;ldquo;route around a
+problem&amp;rdquo; by removing failed components. This process is often called &amp;ldquo;draining&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Drains are a &lt;a
+href="https://www.oreilly.com/content/generic-mitigations/"
+target="_blank"
+&gt;generic
+mitigation&lt;/a&gt;, which means
+you can use them even if you don&amp;rsquo;t understand the cause of the problem (yet)!&lt;/p&gt;</description></item><item><title>Testing changes to Renovate configs</title><link>https://www.marcdougherty.com/2023/testing-changes-to-renovate-configs/</link><pubDate>Thu, 21 Sep 2023 16:46:15 -0700</pubDate><guid>https://www.marcdougherty.com/2023/testing-changes-to-renovate-configs/</guid><description>&lt;p&gt;I get a bit nervous whenever I touch &lt;code&gt;renovate.json&lt;/code&gt; files, because I did not
+know how to test the effects of my changes. Well, this week I spent some quality
+time with Renovate and while the results are not perfect, they&amp;rsquo;re a lot better
+than what I had before!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not familiar with &lt;a
+href="https://docs.renovatebot.com/"
+target="_blank"
+&gt;Renovate&lt;/a&gt;, it is a
+convenient way to keep your dependencies up to date. It understands dependencies
+in many language ecosystems, and supports a variety of ways to run and configure
+Renovate.&lt;/p&gt;</description></item><item><title>Understanding GCP's Loadbalancer models</title><link>https://www.marcdougherty.com/2023/understanding-gcps-loadbalancer-models/</link><pubDate>Mon, 07 Aug 2023 16:50:12 -0700</pubDate><guid>https://www.marcdougherty.com/2023/understanding-gcps-loadbalancer-models/</guid><description>&lt;p&gt;I recently spent some time with &lt;a
+href="https://cloud.google.com/load-balancing/docs/https"
+target="_blank"
+&gt;external application
+loadbalancers&lt;/a&gt; in GCP, and I
+found the data model pretty difficult to work with. What follows is an attempt
+to better explain these concepts, practicing some of the advice from &lt;a
+href="http://docsfordevelopers.com"
+target="_blank"
+&gt;Docs for
+Developers&lt;/a&gt;, which I&amp;rsquo;ve been reading.&lt;/p&gt;
+&lt;h1 class="relative group"&gt;Overview
+&lt;div id="overview" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#overview" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;External Application Loadbalancers are represented in the API by a series of
+related configuration objects. There is no single &amp;ldquo;Loadbalancer&amp;rdquo; object, so it
+is important to ensure the relevant objects all reference each other.&lt;/p&gt;</description></item><item><title>Day 2 Observability - calls to other services</title><link>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</link><pubDate>Fri, 31 Mar 2023 16:33:29 -0700</pubDate><guid>https://www.marcdougherty.com/2023/day-2-observability-calls-to-other-services/</guid><description>&lt;p&gt;This post assumes you&amp;rsquo;re already familiar with
+&lt;a
+href="http://opentelemetry.io"
+target="_blank"
+&gt;OpenTelemetry&lt;/a&gt;, and are already collecting some
+observability data.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;ve chosen automatic instrumentation, or manual, you&amp;rsquo;re now
+collecting telemetry data from your code. Congratulations &amp;#x1f389;&lt;/p&gt;
+&lt;p&gt;But what about all the &lt;em&gt;other&lt;/em&gt; code you&amp;rsquo;re using? When your service makes a
+database query, or fetches weather data, you&amp;rsquo;re using someone else&amp;rsquo;s code. These
+other services may have their own production problems - can you separate issues
+in your code from issues in a dependency with your current observability
+signals?&lt;/p&gt;</description></item><item><title>More Github CLI Tips</title><link>https://www.marcdougherty.com/2023/more-github-cli-tips/</link><pubDate>Fri, 24 Feb 2023 22:51:47 -0800</pubDate><guid>https://www.marcdougherty.com/2023/more-github-cli-tips/</guid><description>&lt;p&gt;Last year, I started working in a number of public Github repositories, and
+learned to use the &lt;a
+href="//cli.github.com"&gt;&lt;code&gt;gh&lt;/code&gt; Github CLI&lt;/a&gt;. I wrote an article about
+&lt;a
+href="https://dev.to/muncus/using-the-github-cli-with-multiple-repos-38k"
+target="_blank"
+&gt;using the github cli with multiple
+repos&lt;/a&gt;, but
+given how much my workflow has changed, I think its time for an update.&lt;/p&gt;
+&lt;h3 class="relative group"&gt;Picking a random teammate
+&lt;div id="picking-a-random-teammate" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#picking-a-random-teammate" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;Sometimes, I need to pick a human to be responsible for something (usually
+a PR review). When there is no obvious choice (for example, someone who already
+knows the context of the PR), I caught myself relying on the same team members
+repeatedly. While this is not a big issue, I wanted a more &amp;ldquo;fair&amp;rdquo; way to pick a
+random assignee.&lt;/p&gt;</description></item><item><title>Handy Yaml Tricks!</title><link>https://www.marcdougherty.com/2023/handy-yaml-tricks/</link><pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2023/handy-yaml-tricks/</guid><description>&lt;p&gt;(This content was originally published at &lt;a
+href="https://dev.to/muncus/handy-yaml-tricks-415p"
+target="_blank"
+&gt;https://dev.to/muncus/handy-yaml-tricks-415p&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;In the past few years, YAML (&lt;a
+href="http://yaml.org"
+target="_blank"
+&gt;http://yaml.org&lt;/a&gt;) has become an essential part of software, particularly for infrastructure-as-code tools. Yaml at the heart of &lt;a
+href="http://kubernetes.io"
+target="_blank"
+&gt;kubernetes&lt;/a&gt; configuration, kubernetes-inspired APIs like &lt;a
+href="https://cloud.google.com/config-connector/docs/concepts/resources"
+target="_blank"
+&gt;Google&amp;rsquo;s config connector&lt;/a&gt;, and a number of workflow systems like &lt;a
+href="https://cloud.google.com/workflows"
+target="_blank"
+&gt;Google Cloud Workflows&lt;/a&gt; and &lt;a
+href="http://github.com/features/actions"
+target="_blank"
+&gt;Github Actions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In its simplest forms, Yaml is quite human-readable, but over time many of these configurations become more complex, and the documentation of these formats is not always as complete or searchable as we might like. Included below are some small tips that may help you make the most of your Yaml configurations.&lt;/p&gt;</description></item></channel></rss>
