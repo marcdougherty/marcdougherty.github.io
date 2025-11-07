@@ -48,11 +48,13 @@ even a "supported" solution - its more of a proof-of-concept. (it does some
 awkward things like rummaging around in your `$GOMODCACHE` and running `go
 download` to fetch updated dependencies.
 
-{{< github repo="muncus/go-depdiffs" showThumbnail=true >}}
+{{< github repo="muncus/go-depdiffs" showThumbnail=false >}}
 
 Now I can run `go-depdiffs --risk low` to see all the easy updates, or
 `go-depdiffs --risk high -v` to see the API differences in the higher risk
 updates.
+
+See the README in the repo for more examples of output and usage.
 
 ## Next steps and future work
 
