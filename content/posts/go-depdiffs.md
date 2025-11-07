@@ -18,25 +18,30 @@ maintainer. :smile:
 
 ## Updates and API differences
 
-Go's built-in tooling for identifying updates is pretty great: `go list -m -u`
+Go's built-in tooling for identifying updates is pretty great: `go list -m -u
+all`
 will show you all the dependencies that have a new version.
 
 But this list, for lax maintainers like myself, can sometimes get surprisingly
-large. I'm looking for a way to separate the "low risk" updates from the higher
-risk updates.
+large. Then Github's Dependabot sends me a massive PR that updates dozens of
+dependencies at once, but some tests have started failing! Rather than block
+*all* updates on the broken tests, I'd love a way to separate the "low risk"
+updates from the higher risk updates.
 
-That's where the `golang.org/x/tools/apidiff` package comes in. In essence, this
-package analyses the exported symbols in two packages and determines if they are
-"compatible" (see [apidiff's definition of compatible](TODO) for details). While
-this may not be a perfect heuristic, it is certainly more information than I had
-previously!
+That's where the [`golang.org/x/exp/apidiff`](http://golang.org/x/exp/apidiff)
+package comes in. In essence, this package analyses the exported symbols in two
+packages and determines if they are "compatible" (see [apidiff's definition of
+compatible](https://pkg.go.dev/golang.org/x/exp/apidiff#section-readme) for
+details). While this may not be a perfect heuristic, it is certainly more
+information than I had before!
 
-I can now think about this problem as a relatively simple process:
+Using API diff, the following process can be performed for each updated
+dependency:
 
 1. Load the current and "new" version of a dependency
     - (load from the modcache, or populate it if needed)
 1. use `apidiff` to determine the differences in exported symbols
-1. Check the report for Incompatible differences
+1. Check the `apidiff.Report` for Incompatible differences
     - no incompatible differences means its a low risk update
     - any incompatible differences makes it a high risk update
 
