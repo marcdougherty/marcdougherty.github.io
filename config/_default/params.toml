@@ -15,3 +15,17 @@ showTableOfContents = true
 sharingLinks = []
 showTaxonomies = true
 showDateUpdated = true
+
+[author]
+name = "Marc Dougherty"
+# image = "img/author.jpg"
+headline = "Socio-technical systems engineer"
+bio = "Developer, SRE, Artist, and Father."
+links = [
+  { github = "https://github.com/muncus" },
+  { twitter = "https://twitter.com/muncus" },
+  { dev = "https://dev.to/muncus" },
+  { medium = "https://medium.com/@muncus" },
+  { linkedin = "https://linkedin.com/in/doughertymarc" },
+  { link = "https://muncus.github.io" }
+]
