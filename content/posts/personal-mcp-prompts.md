@@ -5,7 +5,7 @@ tags: [ AI, MCP ]
 
 The term "prompt engineering" makes it sound complex, but like many developers
 using AI today, I'm frequently revising my prompts to improve the outcomes. But,
-it is easy to lose track of which prompt works best when the prompt is stored in
+it's easy to lose track of which prompt works best when the prompt is stored in
 a `GEMINI.md` or `CLAUDE.md` or `AGENTS.md` file in a project
 directory. By storing my prompts in an MCP server, I can simplify the
 setup and management overhead, putting the "engineering" back in "prompt
@@ -51,7 +51,7 @@ The rest of this post explains how I use this system.
 Consider the "style check" use case mentioned above. I want to provide specific
 guidance for the style and voice of prose content for, say, a blog. It will
 definitely be used on all blog content, but might also get used outside of that
-context, like for social media posts, or other formats. So, lets stick it in
+context, like for social media posts, or other formats. So, let's stick it in
 our MCP server.
 
 The format of stored prompts is pretty simple - there's a yaml frontmatter
@@ -63,7 +63,7 @@ like this:
 name: review-punctuation
 description: ensures personal style of punctuation is correct and consistent.
 ---
-Review the provided content, ensuring that puncutation is correct, and oxford commas are used consistently throughout.
+Review the provided content, ensuring that punctuation is correct, and Oxford commas are used consistently throughout.
 ```
 
 All I have to do is drop this into the `prompts` folder as a markdown file, and
@@ -84,7 +84,7 @@ not eating up valuable context tokens.
 
 ## Identifying versions and keeping current
 
-If I want to verify that i'm using the latest versions of my prompts, I can run `mcp-starter --version`, which will output the git commit hash, and whether or not my contents were modified.
+Running `mcp-starter --version` outputs the git commit hash and whether or not my contents were modified, allowing me to verify that I'm using the latest versions of my prompts.
 
 To update my local MCP server, I can easily do so with `go install github.com/muncus/mcp-starter@latest`.
 
