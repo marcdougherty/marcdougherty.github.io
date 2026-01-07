@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/ai/</link><description>Recent content in AI on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026 Marc Dougherty</copyright><lastBuildDate>Wed, 07 Jan 2026 13:54:24 -0800</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing prompts with a personal MCP server</title><link>https://www.marcdougherty.com/2026/managing-prompts-with-a-personal-mcp-server/</link><pubDate>Wed, 07 Jan 2026 13:54:24 -0800</pubDate><guid>https://www.marcdougherty.com/2026/managing-prompts-with-a-personal-mcp-server/</guid><description>&lt;p&gt;The term &amp;ldquo;prompt engineering&amp;rdquo; makes it sound complex, but like many developers
+using AI today, I&amp;rsquo;m frequently revising my prompts to improve the outcomes. But,
+it&amp;rsquo;s easy to lose track of which prompt works best when the prompt is stored in
+a &lt;code&gt;GEMINI.md&lt;/code&gt; or &lt;code&gt;CLAUDE.md&lt;/code&gt; or &lt;code&gt;AGENTS.md&lt;/code&gt; file in a project
+directory. By storing my prompts in an MCP server, I can simplify the
+setup and management overhead, putting the &amp;ldquo;engineering&amp;rdquo; back in &amp;ldquo;prompt
+engineering&amp;rdquo;.&lt;/p&gt;</description></item></channel></rss>
