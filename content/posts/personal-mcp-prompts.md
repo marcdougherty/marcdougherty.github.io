@@ -1,6 +1,7 @@
 ---
 title: Managing prompts with a personal MCP server
 tags: [ AI, MCP ]
+series: [ "Building with MCP" ]
 ---
 
 The term "prompt engineering" makes it sound complex, but like many developers
