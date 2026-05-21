@@ -23,7 +23,7 @@ URL. So, I built a tool to manage this.
 I built this as an MCP tool and a CLI. However, having the agent update this
 data requires giving it write access to my Google Drive and read access to
 Google Analytics. Read access is mostly harmless, but I shudder to think what
-might happen if my Drive keys were [leaked on moltbook]().
+might happen if my Drive keys were [leaked on moltbook](https://www.moltbook.com/post/a4a5edaa-678b-4865-b99a-8f4e8125d27b).
 
 To manage this risk, I've added Google OAuth support as a subcommand in my
 MCP server so the agent never sees the keys. Now I can run `mcp-starter
@@ -44,18 +44,18 @@ First, I added three subcommands to the `mcp-starter` binary:
     handled this).
 * `auth` starts the OAuth flow.
 
-I implemented these subcommands with [`github.com/urfave/cli/v3`](), but this
+I implemented these subcommands with [`github.com/urfave/cli/v3`](https://github.com/urfave/cli), but this
 could also have been done with Cobra. The first two commands are
 straightforward, and I'll discuss the `auth` command in detail below.
 
 I also needed a configuration file, and a simple way to read and write
-config. I chose [`github.com/spf14/viper`]() for this, since I don't really
+config. I chose [`github.com/spf14/viper`](https://github.com/spf14/viper) for this, since I don't really
 know what else might get added to this config, and I wanted to keep it
 flexible.
 
 #### The `auth` command
 
-The body of the auth command is defined in [`auth/auth.go`]().
+The body of the auth command is defined in [`auth/auth.go`](https://github.com/muncus/mcp-starter/blob/main/auth/auth.go).
 
 Client application OAuth is complex. I first tried the Out of Band (OOB)
 mechanism, but Google disabled it to prevent credential interception.
