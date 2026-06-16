@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agentic Chief of Staff on Marc Dougherty</title><link>https://www.marcdougherty.com/series/agentic-chief-of-staff/</link><description>Recent content in Agentic Chief of Staff on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026 Marc Dougherty</copyright><lastBuildDate>Tue, 16 Jun 2026 14:38:44 -0700</lastBuildDate><atom:link href="https://www.marcdougherty.com/series/agentic-chief-of-staff/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent Patterns</title><link>https://www.marcdougherty.com/2026/ai-agent-patterns/</link><pubDate>Tue, 16 Jun 2026 14:38:44 -0700</pubDate><guid>https://www.marcdougherty.com/2026/ai-agent-patterns/</guid><description>&lt;p&gt;I&amp;rsquo;ve seen a lot of different uses of AI Agents in the last year, both in my own
+experimentation, and from colleagues. I&amp;rsquo;ve been thinking about the usage
+patterns I&amp;rsquo;m noticing lately, and what kinds of patterns might emerge as AI
+agent use continues to evolve.&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Generalist
+&lt;div id="generalist" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#generalist" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;This one happens slowly - you start giving the agent some instructions, and the
+tools and skills just keep piling up. Before you know it, you&amp;rsquo;ve got a
+mega-agent that has skills for everything. This might work fine for many of us,
+as long as the skills and workflows don&amp;rsquo;t create conflicts or uncertainty for
+the agent.&lt;/p&gt;</description></item></channel></rss>
