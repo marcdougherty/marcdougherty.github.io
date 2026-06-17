@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-  workflow_call:
+  workflow_dispatch:
+  schedule:
+    - cron: "48 10 * * 1-5" # Run publishing daily, to enable time-delayed posts
 
 jobs:
   deploy:
