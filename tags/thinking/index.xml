@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thinking on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/thinking/</link><description>Recent content in Thinking on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026 Marc Dougherty</copyright><lastBuildDate>Tue, 16 Jun 2026 14:38:44 -0700</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/thinking/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent Patterns</title><link>https://www.marcdougherty.com/2026/ai-agent-patterns/</link><pubDate>Tue, 16 Jun 2026 14:38:44 -0700</pubDate><guid>https://www.marcdougherty.com/2026/ai-agent-patterns/</guid><description>&lt;p&gt;I&amp;rsquo;ve seen a lot of different uses of AI Agents in the last year, both in my own
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thinking on Marc Dougherty</title><link>https://www.marcdougherty.com/tags/thinking/</link><description>Recent content in Thinking on Marc Dougherty</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026 Marc Dougherty</copyright><lastBuildDate>Tue, 23 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.marcdougherty.com/tags/thinking/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent anatomy -- my mental model</title><link>https://www.marcdougherty.com/2026/ai-agent-anatomy--my-mental-model/</link><pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate><guid>https://www.marcdougherty.com/2026/ai-agent-anatomy--my-mental-model/</guid><description>&lt;p&gt;AI agents seem to be everywhere these days, but I&amp;rsquo;ve found fairly little
+discussion about the mental models that help us build agents. This post
+discusses the mental model I use to think about agentic systems, and how this
+model allows me to think critically about agentic systems.&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Agent Anatomy
+&lt;div id="agent-anatomy" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#agent-anatomy" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;The first real definition I heard for an Agent came from &lt;a
+href="https://simonwillison.net/2025/Sep/18/agents/"
+target="_blank"
+&gt;Simon
+Willison&lt;/a&gt;:&lt;/p&gt;</description></item><item><title>AI Agent Patterns</title><link>https://www.marcdougherty.com/2026/ai-agent-patterns/</link><pubDate>Tue, 16 Jun 2026 14:38:44 -0700</pubDate><guid>https://www.marcdougherty.com/2026/ai-agent-patterns/</guid><description>&lt;p&gt;I&amp;rsquo;ve seen a lot of different uses of AI Agents in the last year, both in my own
 experimentation, and from colleagues. I&amp;rsquo;ve been thinking about the usage
 patterns I&amp;rsquo;m noticing lately, and what kinds of patterns might emerge as AI
 agent use continues to evolve.&lt;/p&gt;
