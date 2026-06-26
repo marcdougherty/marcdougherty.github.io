@@ -5,6 +5,7 @@ title = "Marc's Blog"
 enableEmoji = true
 enableGitInfo = true
 googleAnalytics = 'G-31G86DYMCL'
+summarylength = 0
 
 [frontmatter]
 date = [':filename', 'date', 'publishDate', ':git', ':fileModTime']

@@ -5,7 +5,7 @@ enableCodeCopy = true
 
 [homepage]
 showRecent = true
-showRecentItems = 5
+showRecentItems = 10
 showMoreLink = true
 
 [article]
@@ -15,6 +15,9 @@ showTableOfContents = true
 sharingLinks = []
 showTaxonomies = true
 showDateUpdated = true
+
+[list]
+showSummary = true
 
 [author]
 name = "Marc Dougherty"
