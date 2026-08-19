@@ -55,14 +55,15 @@ structured my task for renaming Go modules:
   go:modrename:
     desc: "rename the current go module"
     dir: "{{.USER_WORKING_DIR}}"
-    env:
-      oldmodule:
+    vars:
+      CURRENT_MODULE:
         sh: go mod edit -json | jq -r '.Module.Path'
+      OLDMODULE: '{{ .OLDMODULE | default .CURRENT_MODULE}}'
     cmds:
       # First, show an error if the required arg is missing.
       - '{{if .CLI_ARGS}}true{{else}}echo "must specify new module path."; false{{end}}'
       - go mod edit -module {{.CLI_ARGS}}
-      - find . -name '*.go' | echo xargs sed -i \'\'  -e "s^${oldmodule}^{{.CLI_ARGS}}^g"
+      - find . -name '*.go' | xargs sed -i ''  -e "s^{{.OLDMODULE}}^{{.CLI_ARGS}}^g"
 ```
 
 I'm using a global Taskfile.yaml, in my home directory, so I can run this
@@ -73,6 +74,15 @@ task -g go:modrename -- github.com/mynew/modulepath
 ```
 (the `-g` tells Task to look in my home directory for the global task file,
 rather than the current directory).
+
+The use of 2 variables (`OLDMODULE` and `CURRENT_MODULE`) lets me fix a rename
+that went wrong, but `go.mod` was already updated correctly. I can specify the
+old module name manually like so:
+
+```
+# rename imports github.com/oldmodule/mistake ==> github.com/mynew/modulepath
+OLDMODULE=github.com/oldmodule/mistake task -g go:modrename -- github.com/mynew/modulepath
+```
 
 This gives me a quick, repeatable way to rename modules, making it easier for me
 to use a forked module. And helps me to rename it back before I send a PR
