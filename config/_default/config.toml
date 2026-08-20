@@ -14,8 +14,19 @@ lastmod = ['lastmod', ':git', 'date', ':fileModTime' ]
 [permalinks.page]
   posts = '/:year/:slug/'
 
+[mediaTypes."text/markdown"]
+  suffixes = ["md"]
+
+[outputFormats.markdown]
+  mediaType = "text/markdown"
+  basename = "index"
+  isPlainText = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "markdown"]
+  page = ["HTML", "RSS", "JSON", "markdown"]
+  section = ["HTML", "RSS", "JSON", "markdown"]
+  taxonomy = ["HTML", "RSS", "JSON", "markdown"]
 
 [taxonomies]
   tag = 'tags'
