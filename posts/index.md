@@ -3,6 +3,8 @@
 
 ## Pages
 
+- [Three flavors of Terraform iteration](https://www.marcdougherty.com/2026/three-flavors-of-terraform-iteration/index.md)
+
 - [Tip: renaming Go modules](https://www.marcdougherty.com/2026/tip-renaming-go-modules/index.md)
 
 - [Building a Write-Only Social Media Agent with Remote MCP](https://www.marcdougherty.com/2026/building-a-write-only-social-media-agent-with-remote-mcp/index.md)
@@ -26,8 +28,6 @@
 - [Multi-cluster load balancing with Google Cloud](https://www.marcdougherty.com/2024/multi-cluster-load-balancing-with-google-cloud/index.md)
 
 - [Building blocks of a Developer Platform](https://www.marcdougherty.com/2024/building-blocks-of-a-developer-platform/index.md)
-
-- [Three flavors of Terraform iteration](https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/index.md)
 
 - [Terraform and GKE Annotations](https://www.marcdougherty.com/2024/terraform-and-gke-annotations/index.md)
 

@@ -16,7 +16,7 @@ Most modern editors and IDEs support the [Language Server Protocol](https://micr
 
 Installation varies depending on the editor, but I found installation with VSCode to be pretty straightforward.
 
-For many common yaml files, the correct schema can be inferred from the file name, and looked up automatically with [SchemaStore](schemastore.org).  SchemaStore hosts a wide collection of JSON Schemas, which can be used to validate Yaml. SchemaStore is backed by the [SchemaStore Github Repository](https://github.com/schemastore/schemastore/), and contributions of additional JSON Schemas are welcome!
+For many common yaml files, the correct schema can be inferred from the file name, and looked up automatically with [SchemaStore](http://schemastore.org).  SchemaStore hosts a wide collection of JSON Schemas, which can be used to validate Yaml. SchemaStore is backed by the [SchemaStore Github Repository](https://github.com/schemastore/schemastore/), and contributions of additional JSON Schemas are welcome!
 
 Schema detection can also be configured manually in your editor if auto-detection is inaccurate.
 

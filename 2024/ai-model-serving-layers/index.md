@@ -78,7 +78,7 @@ bunch of different options for client libraries:
 TGI-compatible server
 - Some hosted models (like Google's Gemini) have their own API and
 associated client library
-- There are also frameworks like [langchain](langchain.com) that
+- There are also frameworks like [langchain](http://langchain.com) that
 have support for many different LLM backends.
 
 Because this technology is evolving rapidly, I recommend choosing either the
