@@ -197,7 +197,7 @@ I hope this quick introduction helped you understand the differences between
 right flavor of iteration next time you're working with terraform.
 
 If you're interested in Platform Engineering (sometimes with Terraform), you
-can [follow me on Medium](medium.com/@muncus), or check out the [Google Cloud
+can [follow me on Medium](http://medium.com/@muncus), or check out the [Google Cloud
 Community publication](https://medium.com/google-cloud) for a broader range of
 topics.
 
