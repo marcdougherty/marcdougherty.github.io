@@ -3,6 +3,8 @@
 
 ## Pages
 
+- [Talking to Agents with a2a (as a human!)](https://www.marcdougherty.com/2026/talking-to-agents-with-a2a-as-a-human/index.md)
+
 - [Three flavors of Terraform iteration](https://www.marcdougherty.com/2026/three-flavors-of-terraform-iteration/index.md)
 
 - [Tip: renaming Go modules](https://www.marcdougherty.com/2026/tip-renaming-go-modules/index.md)
