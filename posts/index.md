@@ -3,6 +3,8 @@
 
 ## Pages
 
+- [Conferences, QR Codes and Quirk](https://www.marcdougherty.com/2026/conferences-qr-codes-and-quirk/index.md)
+
 - [Talking to Agents with a2a (as a human!)](https://www.marcdougherty.com/2026/talking-to-agents-with-a2a-as-a-human/index.md)
 
 - [Three flavors of Terraform iteration](https://www.marcdougherty.com/2026/three-flavors-of-terraform-iteration/index.md)
