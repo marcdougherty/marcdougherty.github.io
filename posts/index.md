@@ -9,8 +9,6 @@
 
 - [Talking to Agents with a2a (as a human!)](https://www.marcdougherty.com/2026/talking-to-agents-with-a2a-as-a-human/index.md)
 
-- [Three flavors of Terraform iteration](https://www.marcdougherty.com/2026/three-flavors-of-terraform-iteration/index.md)
-
 - [Tip: renaming Go modules](https://www.marcdougherty.com/2026/tip-renaming-go-modules/index.md)
 
 - [Building a Write-Only Social Media Agent with Remote MCP](https://www.marcdougherty.com/2026/building-a-write-only-social-media-agent-with-remote-mcp/index.md)
@@ -38,6 +36,8 @@
 - [Terraform and GKE Annotations](https://www.marcdougherty.com/2024/terraform-and-gke-annotations/index.md)
 
 - [Architecting for Traffic Drains](https://www.marcdougherty.com/2024/architecting-for-traffic-drains/index.md)
+
+- [Three flavors of Terraform iteration](https://www.marcdougherty.com/2024/three-flavors-of-terraform-iteration/index.md)
 
 - [Testing changes to Renovate configs](https://www.marcdougherty.com/2023/testing-changes-to-renovate-configs/index.md)
 
