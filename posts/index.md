@@ -3,6 +3,8 @@
 
 ## Pages
 
+- [Quick tip: easy terminal demo gifs with `vhs` :vhs:](https://www.marcdougherty.com/2026/quick-tip-easy-terminal-demo-gifs-with-vhs-vhs/index.md)
+
 - [Conferences, QR Codes and Quirk](https://www.marcdougherty.com/2026/conferences-qr-codes-and-quirk/index.md)
 
 - [Talking to Agents with a2a (as a human!)](https://www.marcdougherty.com/2026/talking-to-agents-with-a2a-as-a-human/index.md)
