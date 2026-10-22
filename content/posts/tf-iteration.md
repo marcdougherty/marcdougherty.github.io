@@ -1,6 +1,7 @@
 ---
 title: Three flavors of Terraform iteration
 tags: [ terraform, platform ]
+publishDate: 2024-01-01
 ---
 
 I was writing a Terraform module to create a Google Cloud Load Balancer with an
@@ -19,7 +20,7 @@ objects into a
 This requires a few intermediate objects, and some json parsing in the
 terraform. If you're curious about the outcome of this work, you can check out
 the [Reliable App
-Platforms](github.com/googlecloudplatform/reliable-app-platforms) github
+Platforms](http://github.com/googlecloudplatform/reliable-app-platforms) github
 repository.
 
 While I did _eventually_ find the information I needed in the Terraform docs
