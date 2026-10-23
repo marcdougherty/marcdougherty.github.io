@@ -3,6 +3,8 @@
 
 ## Pages
 
+- [Serving Markdown from Hugo for better AI legibility](https://www.marcdougherty.com/2026/serving-markdown-from-hugo-for-better-ai-legibility/index.md)
+
 - [Quick tip: easy terminal demo gifs with `vhs` :vhs:](https://www.marcdougherty.com/2026/quick-tip-easy-terminal-demo-gifs-with-vhs-vhs/index.md)
 
 - [Conferences, QR Codes and Quirk](https://www.marcdougherty.com/2026/conferences-qr-codes-and-quirk/index.md)
