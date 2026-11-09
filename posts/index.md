@@ -3,6 +3,10 @@
 
 ## Pages
 
+- [Visual Agent Control with QMCP](https://www.marcdougherty.com/2026/visual-agent-control-with-qmcp/index.md)
+
+- [ATO Reflections](https://www.marcdougherty.com/2026/ato-reflections/index.md)
+
 - [Serving Markdown from Hugo for better AI legibility](https://www.marcdougherty.com/2026/serving-markdown-from-hugo-for-better-ai-legibility/index.md)
 
 - [Quick tip: easy terminal demo gifs with `vhs` :vhs:](https://www.marcdougherty.com/2026/quick-tip-easy-terminal-demo-gifs-with-vhs-vhs/index.md)
