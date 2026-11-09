@@ -15,10 +15,10 @@ lastmod = ['lastmod', ':git', 'date', ':fileModTime' ]
   posts = '/:year/:slug/'
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "markdown"]
-  page = ["HTML", "RSS", "JSON", "markdown"]
-  section = ["HTML", "RSS", "JSON", "markdown"]
-  taxonomy = ["HTML", "RSS", "JSON", "markdown"]
+  home = ["HTML", "RSS", "markdown"]
+  page = ["HTML", "RSS", "markdown"]
+  section = ["HTML", "RSS", "markdown"]
+  taxonomy = ["HTML", "RSS", ]
 
 [taxonomies]
   tag = 'tags'
